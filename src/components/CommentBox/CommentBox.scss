@@ -1,0 +1,125 @@
+.commentBoxMain {
+  width: 100%;
+}
+.postInput {
+  width: 100%;
+  height: 45px;
+  resize: none;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.postButton {
+  width: 60px;
+  height: 25px;
+  float: right;
+  color: white;
+  font-weight: bold;
+  background-color: cadetblue;
+  cursor: pointer;
+}
+
+.mainPost {
+  color: #656565;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: white;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.postsSection {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.commentsSection {
+  @extend .postsSection;
+
+  background-color: rgb(237, 239, 244);
+  padding: 5px 5px 5px 10px;
+}
+
+.userName {
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.userIcon {
+  width: 30px;
+  height: 30px;
+  float: left;
+  padding: 4px;
+  background-color: aliceblue;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.actionCenter {
+  display: flex;
+  font-size: 12px;
+  padding-left: 5px;
+  background-color: rgb(237, 239, 244);
+  height: 30px;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.commentsActionCenter {
+  @extend .actionCenter;
+
+  padding-left: 0px;
+  font-weight: normal;
+  height: 15px;
+}
+
+.action {
+  margin-right: 5px;
+  color: rgb(114, 166, 210);
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.commentPost {
+  font-weight: normal;
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+.commentUserNameText {
+  font-size: 12px;
+}
+
+.replyInput {
+  width: 100%;
+  height: 30px;
+}
+
+.replySection {
+  width: calc(100% - 40px);
+  margin-left: 38px;
+}
+
+.commentSection {
+  width: 100%;
+  height: 60px;
+}
+
+.commentInput {
+  width: 100%;
+  height: 35px;
+}
+
+.commentButton {
+  float: right;
+  height: 25px;
+}
