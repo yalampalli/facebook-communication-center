@@ -69,8 +69,8 @@ class App extends Component {
 
     const newReply = {
       id: newId,
-      createdTime: new Date(),
-      createdBy: 'Random User',
+      createdTime: `${new Date()}`,
+      userName: 'Random User',
       comment: replyText,
       replies: [],
     };
